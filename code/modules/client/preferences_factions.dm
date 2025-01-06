@@ -15,6 +15,7 @@ var/global/list/seen_religions = list()
 
 // VOREStation Edits Start
 var/global/list/citizenship_choices = list(
+	"The Alliance of Racial Federations",
 	"Greater Human Diaspora",
 	"Commonwealth of Sol-Procyon",
 	"Skrell Consensus",
@@ -29,6 +30,7 @@ var/global/list/citizenship_choices = list(
 	)
 
 var/global/list/home_system_choices = list(
+	"ARF Fleets",
 	"Virgo-Erigone",
 	"Sol",
 	"Earth, Sol",
@@ -66,6 +68,7 @@ var/global/list/home_system_choices = list(
 	)
 
 var/global/list/faction_choices = list(
+	"The Alliance of Racial Federations",
 	"NanoTrasen Incorporated",
 	"Hephaestus Industries",
 	"Vey-Medical",

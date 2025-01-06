@@ -111,7 +111,7 @@
 		return TOPIC_REFRESH
 
 	else if(href_list["faction"])
-		var/choice = tgui_input_list(user, "Please choose the faction you primarily work for, if you are not under the direct employ of NanoTrasen. Select \"Other\" to specify manually.", "Character Preference", faction_choices + list("None","Other"), pref.faction)
+		var/choice = tgui_input_list(user, "Please choose the faction you primarily work for, if you are not under the direct employ of the ARF. Select \"Other\" to specify manually.", "Character Preference", faction_choices + list("None","Other"), pref.faction)
 		if(!choice || !CanUseTopic(user))
 			return TOPIC_NOACTION
 		if(choice == "Other")

@@ -181,7 +181,7 @@
 		if(100 to 200)
 			to_chat(L, SPAN_NOTICE("Climbing while [L.isSynthetic() ? "low on power" : "hungry"] slows you down"))
 			climb_time += 1 SECONDS
-		if(nutrition_cost to 100)
+		if(50 to 100)
 			to_chat(L, SPAN_DANGER("You [L.isSynthetic() ? "lack enough power" : "are too hungry"] to climb safely!"))
 			climb_time +=3 SECONDS
 			if(fall_chance < 30)
@@ -298,7 +298,7 @@
 		if(100 to 200)
 			to_chat(src, SPAN_NOTICE("Climbing while [isSynthetic() ? "low on power" : "hungry"] slows you down"))
 			climb_time += 1 SECONDS
-		if(nutrition_cost to 100)
+		if(25 to 100)
 			to_chat(src, SPAN_DANGER("You [isSynthetic() ? "lack enough power" : "are too hungry"] to climb safely!"))
 			climb_time +=3 SECONDS
 			if(fall_chance < 30)

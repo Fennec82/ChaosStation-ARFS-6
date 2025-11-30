@@ -227,6 +227,7 @@
 					else
 						src.healths.icon_state = "health6"
 			else
+				var/death_threshold = config.health_threshold_dead
 				switch(health)
 					if(200 to INFINITY)
 						src.healths.icon_state = "health0"
@@ -238,10 +239,10 @@
 						src.healths.icon_state = "health3"
 					if(0 to 50)
 						src.healths.icon_state = "health4"
-					if(config.health_threshold_dead to 0)
-						src.healths.icon_state = "health5"
-					else
-						src.healths.icon_state = "health6"
+				if(health > death_threshold && health <= 0)
+					src.healths.icon_state = "health5"
+				else if(health <= death_threshold)
+					src.healths.icon_state = "health6"
 		else
 			src.healths.icon_state = "health7"
 

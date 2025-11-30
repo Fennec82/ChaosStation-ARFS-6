@@ -1,7 +1,7 @@
-#if DM_VERSION >= 516
+/*#if DM_VERSION >= 516
 #error PLEASE MAKE SURE THAT 515 IS PROPERLY TESTED AND WORKS. ESPECIALLY THE SAVE-FILES HAVE TO WORK.
 #error Additionally: Make sure that the GitHub Workflow was updated to BYOND 515 as well.
-#endif
+#endif*/
 
 // These defines are from __513_compatibility.dm -- Please Sort
 #define CLAMP(CLVALUE, CLMIN, CLMAX) clamp(CLVALUE, CLMIN, CLMAX)
@@ -12,8 +12,8 @@
 // This file contains defines allowing targeting byond versions newer than the supported
 
 //Update this whenever you need to take advantage of more recent byond features
-#define MIN_COMPILER_VERSION 514
-#define MIN_COMPILER_BUILD 1556
+#define MIN_COMPILER_VERSION 516
+#define MIN_COMPILER_BUILD 1662
 #if (DM_VERSION < MIN_COMPILER_VERSION || DM_BUILD < MIN_COMPILER_BUILD) && !defined(SPACEMAN_DMM)
 //Don't forget to update this part
 #error Your version of BYOND is too out-of-date to compile this project. Go to https://secure.byond.com/download and update.
